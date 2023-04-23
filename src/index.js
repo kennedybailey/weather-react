@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles.css";
+
+import reportWebVitals from "./reportWebVitals";
+
+import Current from "./Current";
+import Upcoming from "./Upcoming";
+import Footer from "./Footer";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="Container">
+      <Current />
+      <br />
+      <Upcoming />
+      <hr />
+      <Footer />
+    </div>
   </React.StrictMode>
 );
 
