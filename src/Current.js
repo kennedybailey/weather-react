@@ -41,9 +41,7 @@ export default function Current(props) {
   } else {
     return (
       <div className="row">
-        <div className="col-6">
-          <button id="temp-change">Fahrenheit</button>
-        </div>
+        <div className="col-6"></div>
         <div className="col-6">
           <form onSubmit={handleSubmit}>
             <input

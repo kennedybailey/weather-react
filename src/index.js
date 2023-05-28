@@ -8,7 +8,7 @@ import "./styles.css";
 import reportWebVitals from "./reportWebVitals";
 
 import Current from "./Current";
-import Upcoming from "./Upcoming";
+
 import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,8 +16,6 @@ root.render(
   <React.StrictMode>
     <div className="Container">
       <Current defaultCity="Toronto" />
-      <br />
-      <Upcoming />
       <hr />
       <Footer />
     </div>
